@@ -5,7 +5,7 @@ import { FaShoppingCart } from 'react-icons/fa'
 const Header = () => {
   return (
     <header className='header'>
-        <h1 className='logo'>Wow's Bracelets Collections</h1>
+        <h1 className='logo'>Wow`s Bracelets Collections</h1>
     <nav>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
