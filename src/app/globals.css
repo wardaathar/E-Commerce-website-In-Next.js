@@ -19,7 +19,6 @@ h1, h2, h3{
     font-weight: bold;
 }
 
-/* Header  Styles */
 
 .header {
     background-color: #0070f3;
@@ -136,7 +135,7 @@ footer p {
 .bracelets-card {
     width: 100%;
     background-color: white;
-    padding: 20%;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
@@ -145,10 +144,15 @@ footer p {
 }
 
 .bracelets-card img {
-    width: 100;
-    height: auto;
-    border-radius: 10px;
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+    max-width: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
 }
+
+
 
 .bracelets-card h3 {
     margin-top: 10px;
@@ -178,17 +182,18 @@ footer p {
 }
 
 .bracelets-card button:hover {
-    background-color: #005bb5;
+    background-color: darkblue;
 }
 
 .bracelets-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    transition: transfrom 0.3s ease;
+    transition: transform 0.3s ease;
+    object-fit: contain; 
 }
 
-.bracelets-card:hover img {
+.bracelets-card:hover image {
     transform: scale(1.1);
 }
 
@@ -221,7 +226,7 @@ footer p {
 }
 
 .contact-form button:hover {
-    background-color: #0070f5;
+    background-color: #333537;
 
 }
 
@@ -258,11 +263,11 @@ footer p {
 
     .header nav{
         flex-direction: column;
-        gap: 20;
+        gap: 20px;
         align-items: center;
     }
 
-    .herp {
+    .hero {
         height: 70vh;
         padding: 20px;
         align-self: center;
@@ -284,7 +289,7 @@ footer p {
     }
 
     .bracelets {
-        grid-template-columns: ifr;
+        grid-template-columns: 1fr;
         margin: 20px;
     }
 
